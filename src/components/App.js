@@ -6,13 +6,12 @@ import ArticleList from './ArticleList';
 import blogData from '../data/blog';
 
 function App() {
-  const { name, about, image, articles } = blogData;
-
+  const { name, about, image, posts } = blogData;
   return (
     <div>
       <Header name={name} />
       <About image={image} about={about} />
-      <ArticleList articles={articles} />
+      <ArticleList posts={posts} />
     </div>
   );
 }
